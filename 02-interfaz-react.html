@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <div id="root"></div>
+        <!-- Desarrollo -->
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <!-- Producción -->
+        <!-- <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+             <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script> -->
+        <script type="text/javascript">
+            const rootElement = document.getElementById('root');
+            const element = React.createElement('div', {
+                children: 'Hello World',
+                className: 'container',
+            });
+            console.log({element});
+            ReactDOM.render(element, rootElement);
+            // const element = document.createElement('div');
+            // element.textContent = 'Hello World';
+            // element.className = 'container';
+            // rootElement.appendChild(element);
+        </script>
+
+    </body>
+</html>
